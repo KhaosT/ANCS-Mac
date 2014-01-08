@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC91ACDA187236C7006BF770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACD9187236C7006BF770 /* Foundation.framework */; };
+		CC91ACDC187236C7006BF770 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACDB187236C7006BF770 /* CoreGraphics.framework */; };
+		CC91ACDE187236C7006BF770 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACDD187236C7006BF770 /* UIKit.framework */; };
+		CC91ACE4187236C7006BF770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC91ACE2187236C7006BF770 /* InfoPlist.strings */; };
+		CC91ACE6187236C7006BF770 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC91ACE5187236C7006BF770 /* main.m */; };
+		CC91ACEA187236C7006BF770 /* OTIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC91ACE9187236C7006BF770 /* OTIAppDelegate.m */; };
+		CC91ACED187236C7006BF770 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC91ACEB187236C7006BF770 /* Main_iPhone.storyboard */; };
+		CC91ACF0187236C7006BF770 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC91ACEE187236C7006BF770 /* Main_iPad.storyboard */; };
+		CC91ACF3187236C7006BF770 /* OTIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC91ACF2187236C7006BF770 /* OTIViewController.m */; };
+		CC91ACF5187236C7006BF770 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC91ACF4187236C7006BF770 /* Images.xcassets */; };
+		CC91ACFC187236C7006BF770 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACFB187236C7006BF770 /* XCTest.framework */; };
+		CC91ACFD187236C7006BF770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACD9187236C7006BF770 /* Foundation.framework */; };
+		CC91ACFE187236C7006BF770 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91ACDD187236C7006BF770 /* UIKit.framework */; };
+		CC91AD06187236C7006BF770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC91AD04187236C7006BF770 /* InfoPlist.strings */; };
+		CC91AD08187236C7006BF770 /* ANCSPeripheralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC91AD07187236C7006BF770 /* ANCSPeripheralTests.m */; };
+		CC91AD12187236D2006BF770 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC91AD11187236D2006BF770 /* CoreBluetooth.framework */; };
+		CC91AD15187236EA006BF770 /* OTIANCSCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CC91AD14187236EA006BF770 /* OTIANCSCore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC91ACFF187236C7006BF770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC91ACCE187236C7006BF770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC91ACD5187236C7006BF770;
+			remoteInfo = ANCSPeripheral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC91ACD6187236C7006BF770 /* ANCSPeripheral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANCSPeripheral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC91ACD9187236C7006BF770 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC91ACDB187236C7006BF770 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC91ACDD187236C7006BF770 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC91ACE1187236C7006BF770 /* ANCSPeripheral-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ANCSPeripheral-Info.plist"; sourceTree = "<group>"; };
+		CC91ACE3187236C7006BF770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC91ACE5187236C7006BF770 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC91ACE7187236C7006BF770 /* ANCSPeripheral-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ANCSPeripheral-Prefix.pch"; sourceTree = "<group>"; };
+		CC91ACE8187236C7006BF770 /* OTIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTIAppDelegate.h; sourceTree = "<group>"; };
+		CC91ACE9187236C7006BF770 /* OTIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTIAppDelegate.m; sourceTree = "<group>"; };
+		CC91ACEC187236C7006BF770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CC91ACEF187236C7006BF770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CC91ACF1187236C7006BF770 /* OTIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTIViewController.h; sourceTree = "<group>"; };
+		CC91ACF2187236C7006BF770 /* OTIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTIViewController.m; sourceTree = "<group>"; };
+		CC91ACF4187236C7006BF770 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC91ACFA187236C7006BF770 /* ANCSPeripheralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANCSPeripheralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC91ACFB187236C7006BF770 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CC91AD03187236C7006BF770 /* ANCSPeripheralTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ANCSPeripheralTests-Info.plist"; sourceTree = "<group>"; };
+		CC91AD05187236C7006BF770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC91AD07187236C7006BF770 /* ANCSPeripheralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANCSPeripheralTests.m; sourceTree = "<group>"; };
+		CC91AD11187236D2006BF770 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CC91AD13187236EA006BF770 /* OTIANCSCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTIANCSCore.h; sourceTree = "<group>"; };
+		CC91AD14187236EA006BF770 /* OTIANCSCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTIANCSCore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC91ACD3187236C7006BF770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91AD12187236D2006BF770 /* CoreBluetooth.framework in Frameworks */,
+				CC91ACDC187236C7006BF770 /* CoreGraphics.framework in Frameworks */,
+				CC91ACDE187236C7006BF770 /* UIKit.framework in Frameworks */,
+				CC91ACDA187236C7006BF770 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91ACF7187236C7006BF770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91ACFC187236C7006BF770 /* XCTest.framework in Frameworks */,
+				CC91ACFE187236C7006BF770 /* UIKit.framework in Frameworks */,
+				CC91ACFD187236C7006BF770 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC91ACCD187236C7006BF770 = {
+			isa = PBXGroup;
+			children = (
+				CC91ACDF187236C7006BF770 /* ANCSPeripheral */,
+				CC91AD01187236C7006BF770 /* ANCSPeripheralTests */,
+				CC91ACD8187236C7006BF770 /* Frameworks */,
+				CC91ACD7187236C7006BF770 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC91ACD7187236C7006BF770 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC91ACD6187236C7006BF770 /* ANCSPeripheral.app */,
+				CC91ACFA187236C7006BF770 /* ANCSPeripheralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC91ACD8187236C7006BF770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC91AD11187236D2006BF770 /* CoreBluetooth.framework */,
+				CC91ACD9187236C7006BF770 /* Foundation.framework */,
+				CC91ACDB187236C7006BF770 /* CoreGraphics.framework */,
+				CC91ACDD187236C7006BF770 /* UIKit.framework */,
+				CC91ACFB187236C7006BF770 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC91ACDF187236C7006BF770 /* ANCSPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				CC91ACE8187236C7006BF770 /* OTIAppDelegate.h */,
+				CC91ACE9187236C7006BF770 /* OTIAppDelegate.m */,
+				CC91ACEB187236C7006BF770 /* Main_iPhone.storyboard */,
+				CC91ACEE187236C7006BF770 /* Main_iPad.storyboard */,
+				CC91ACF1187236C7006BF770 /* OTIViewController.h */,
+				CC91ACF2187236C7006BF770 /* OTIViewController.m */,
+				CC91AD13187236EA006BF770 /* OTIANCSCore.h */,
+				CC91AD14187236EA006BF770 /* OTIANCSCore.m */,
+				CC91ACF4187236C7006BF770 /* Images.xcassets */,
+				CC91ACE0187236C7006BF770 /* Supporting Files */,
+			);
+			path = ANCSPeripheral;
+			sourceTree = "<group>";
+		};
+		CC91ACE0187236C7006BF770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC91ACE1187236C7006BF770 /* ANCSPeripheral-Info.plist */,
+				CC91ACE2187236C7006BF770 /* InfoPlist.strings */,
+				CC91ACE5187236C7006BF770 /* main.m */,
+				CC91ACE7187236C7006BF770 /* ANCSPeripheral-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC91AD01187236C7006BF770 /* ANCSPeripheralTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC91AD07187236C7006BF770 /* ANCSPeripheralTests.m */,
+				CC91AD02187236C7006BF770 /* Supporting Files */,
+			);
+			path = ANCSPeripheralTests;
+			sourceTree = "<group>";
+		};
+		CC91AD02187236C7006BF770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC91AD03187236C7006BF770 /* ANCSPeripheralTests-Info.plist */,
+				CC91AD04187236C7006BF770 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC91ACD5187236C7006BF770 /* ANCSPeripheral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC91AD0B187236C7006BF770 /* Build configuration list for PBXNativeTarget "ANCSPeripheral" */;
+			buildPhases = (
+				CC91ACD2187236C7006BF770 /* Sources */,
+				CC91ACD3187236C7006BF770 /* Frameworks */,
+				CC91ACD4187236C7006BF770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANCSPeripheral;
+			productName = ANCSPeripheral;
+			productReference = CC91ACD6187236C7006BF770 /* ANCSPeripheral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC91ACF9187236C7006BF770 /* ANCSPeripheralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC91AD0E187236C7006BF770 /* Build configuration list for PBXNativeTarget "ANCSPeripheralTests" */;
+			buildPhases = (
+				CC91ACF6187236C7006BF770 /* Sources */,
+				CC91ACF7187236C7006BF770 /* Frameworks */,
+				CC91ACF8187236C7006BF770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC91AD00187236C7006BF770 /* PBXTargetDependency */,
+			);
+			name = ANCSPeripheralTests;
+			productName = ANCSPeripheralTests;
+			productReference = CC91ACFA187236C7006BF770 /* ANCSPeripheralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC91ACCE187236C7006BF770 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OTI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Oltica;
+				TargetAttributes = {
+					CC91ACD5187236C7006BF770 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					CC91ACF9187236C7006BF770 = {
+						TestTargetID = CC91ACD5187236C7006BF770;
+					};
+				};
+			};
+			buildConfigurationList = CC91ACD1187236C7006BF770 /* Build configuration list for PBXProject "ANCSPeripheral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC91ACCD187236C7006BF770;
+			productRefGroup = CC91ACD7187236C7006BF770 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC91ACD5187236C7006BF770 /* ANCSPeripheral */,
+				CC91ACF9187236C7006BF770 /* ANCSPeripheralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC91ACD4187236C7006BF770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91ACF0187236C7006BF770 /* Main_iPad.storyboard in Resources */,
+				CC91ACF5187236C7006BF770 /* Images.xcassets in Resources */,
+				CC91ACED187236C7006BF770 /* Main_iPhone.storyboard in Resources */,
+				CC91ACE4187236C7006BF770 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91ACF8187236C7006BF770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91AD06187236C7006BF770 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC91ACD2187236C7006BF770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91ACF3187236C7006BF770 /* OTIViewController.m in Sources */,
+				CC91ACE6187236C7006BF770 /* main.m in Sources */,
+				CC91AD15187236EA006BF770 /* OTIANCSCore.m in Sources */,
+				CC91ACEA187236C7006BF770 /* OTIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC91ACF6187236C7006BF770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC91AD08187236C7006BF770 /* ANCSPeripheralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC91AD00187236C7006BF770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC91ACD5187236C7006BF770 /* ANCSPeripheral */;
+			targetProxy = CC91ACFF187236C7006BF770 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC91ACE2187236C7006BF770 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC91ACE3187236C7006BF770 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC91ACEB187236C7006BF770 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC91ACEC187236C7006BF770 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CC91ACEE187236C7006BF770 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC91ACEF187236C7006BF770 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CC91AD04187236C7006BF770 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC91AD05187236C7006BF770 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC91AD09187236C7006BF770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC91AD0A187236C7006BF770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC91AD0C187236C7006BF770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANCSPeripheral/ANCSPeripheral-Prefix.pch";
+				INFOPLIST_FILE = "ANCSPeripheral/ANCSPeripheral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC91AD0D187236C7006BF770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANCSPeripheral/ANCSPeripheral-Prefix.pch";
+				INFOPLIST_FILE = "ANCSPeripheral/ANCSPeripheral-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CC91AD0F187236C7006BF770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ANCSPeripheral.app/ANCSPeripheral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANCSPeripheral/ANCSPeripheral-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ANCSPeripheralTests/ANCSPeripheralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CC91AD10187236C7006BF770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ANCSPeripheral.app/ANCSPeripheral";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANCSPeripheral/ANCSPeripheral-Prefix.pch";
+				INFOPLIST_FILE = "ANCSPeripheralTests/ANCSPeripheralTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC91ACD1187236C7006BF770 /* Build configuration list for PBXProject "ANCSPeripheral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91AD09187236C7006BF770 /* Debug */,
+				CC91AD0A187236C7006BF770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC91AD0B187236C7006BF770 /* Build configuration list for PBXNativeTarget "ANCSPeripheral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91AD0C187236C7006BF770 /* Debug */,
+				CC91AD0D187236C7006BF770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC91AD0E187236C7006BF770 /* Build configuration list for PBXNativeTarget "ANCSPeripheralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC91AD0F187236C7006BF770 /* Debug */,
+				CC91AD10187236C7006BF770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC91ACCE187236C7006BF770 /* Project object */;
+}
