@@ -1,6 +1,8 @@
 ANCS-Mac
 ========
 
+**THIS PROJECT NO LONGER WORKS ON RECENT macOS DUE TO Core Bluetooth CHANGES.**
+
 A demo based on Apple Notification Center Service to show notifications from iOS on OS X.
 
 ANCSTest - running on OS X. Will display new notifications from iOS on Notification Center of OS X.
